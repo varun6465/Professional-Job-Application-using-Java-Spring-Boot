@@ -7,5 +7,6 @@ WORKDIR /app
 # Copy the JAR file from the host to the container
 COPY target/firstjob-0.0.1-SNAPSHOT.jar /app/firstjob.jar
 
+#enterypoint
 # Specify the command to run the application
 ENTRYPOINT ["java", "-jar", "firstjob.jar"]
